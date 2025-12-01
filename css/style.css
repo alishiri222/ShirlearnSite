@@ -1,0 +1,247 @@
+body {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+
+.hero {
+    min-height: 90vh;
+    background: url("../img/bg-banner.jpg") center/cover no-repeat;
+    color: white;
+    text-shadow: 0 3px 15px rgba(0, 0, 0, .5);
+    opacity: 97%;
+}
+
+
+
+.service-card {
+    border-radius: 16px;
+    transition: .3s;
+    background: #fff;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+.portfolio-img {
+    width: 100%;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.05);
+}
+
+.price-card {
+    border-radius: 16px;
+    background: #fff;
+}
+
+/* فوتر */
+footer {
+    font-size: 14px;
+}
+
+
+
+.portfolio-text {
+    color: #ff4444;
+    font-weight: 900;
+
+}
+
+
+/* ===== Portfolio Section Header ===== */
+.portfolio-header {
+    margin-bottom: 60px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Title */
+.portfolio-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+/* Red underline */
+.portfolio-divider {
+    width: 140px;
+    height: 3px;
+    margin: 0 auto 20px;
+    background: linear-gradient(90deg, #ff4444, #ff0000);
+    border-radius: 20px;
+    box-shadow: 0 0 12px #ff4444aa;
+}
+
+/* Subtitle text */
+.portfolio-subtitle {
+    font-size: 15.5px;
+    color: #ddd;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 720px;
+    margin: auto;
+    font-weight: 300;
+}
+
+/* Light glow animation on hover */
+.portfolio-header:hover .portfolio-title {
+    text-shadow: 0 0 18px #ff444440;
+    transition: .4s ease;
+}
+
+.portfolio-header:hover .portfolio-divider {
+    box-shadow: 0 0 16px #ff4444aa;
+    transition: .4s ease;
+}
+
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 350px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+
+.portfolio-card:hover .portfolio-img {
+    transform: scale(1.1);
+}
+
+/* لایه پایین که اسلاید می‌شود */
+.portfolio-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    color: white;
+    transition: all .6s cubic-bezier(.19, 1, .22, 1);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    bottom: 0;
+}
+
+/* عنوان */
+.portfolio-overlay h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+
+.swiper {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.people img {
+
+    object-fit: cover;
+}
+
+.footer {
+    background: #0e0e0e;
+    color: #ccc;
+}
+
+.footer-title {
+    font-weight: 800;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bfbfbf;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #0d6efd;
+    padding-left: 4px;
+}
+
+/* Contact */
+.footer-contact {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.footer-contact i {
+    color: #0d6efd;
+    margin-left: 6px;
+}
+
+/* Social icons */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 50%;
+    color: white;
+    background: #1b1b1b;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #0d6efd;
+    transform: translateY(-4px);
+}
+
+/* Copy Right */
+.copyright {
+    color: #888;
+    font-size: 14px;
+}
